@@ -1,0 +1,10 @@
+这个文件夹主要用来容纳HTML文件，文件夹名字默认的是view，如果有变化，那么请修改web.xml中的
+<context-param>
+    <param-name>view-prefix</param-name>
+    <param-value>/WEB-INF/view/</param-value>  ==>  这一行的参数
+</context-param>
+<context-param>
+    <param-name>view-suffix</param-name>
+    <param-value>.html</param-value>
+</context-param>
+以及注意ViewBaseServlet.java文件中设置前后缀是否和上方web.xml中param-name一致。
